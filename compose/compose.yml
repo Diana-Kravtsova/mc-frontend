@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  wiremock:
+    image: rodolpheche/wiremock:latest
+    restart: always
+    command: "--global-response-templating"
+    volumes:
+      - ./wiremock:/home/wiremock
+    ports:
+      - 8080:8080

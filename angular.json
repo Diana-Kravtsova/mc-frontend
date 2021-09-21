@@ -104,11 +104,6 @@
               "src/styles.scss"
             ],
             "scripts": []
-          },
-          "configurations": {
-            "ci": {
-              "browsers": "ChromeHeadless"
-            }
           }
         }
       }

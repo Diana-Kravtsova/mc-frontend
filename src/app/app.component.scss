@@ -1,0 +1,37 @@
+.title {
+  flex: 0 0 auto;
+  justify-content: center;
+
+  span {
+    flex-grow: 1;
+  }
+}
+
+.mat-tab-group {
+  flex: 1 0 auto;
+}
+
+.bottom{
+  position:fixed;
+  bottom:0;
+}
+.copyright {
+  flex: 0 0 auto;
+  font-size: 24px;
+  z-index: 1;
+}
+.mat-tab-group {
+  font-size: 16px;
+}
+.container p{
+  margin: 20px 50px 0 50px ;
+}
+.container {
+  max-height: 85.2vh;/*
+  max-height: 88.6vh;*/
+}
+.container, .mat-toolbar{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+

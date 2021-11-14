@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from './http.service'
 import {UserName} from './user.interface';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+
 /*import {ThemePalette} from '@angular/material/core';*/
 
 @Component({
@@ -11,19 +13,21 @@ import {UserName} from './user.interface';
 })
 
 export class AppComponent implements OnInit{
-  users: UserName[] = []
+  users: UserName[] = [];
   copyright?: string;
 
   constructor(private httpService: HttpService) {}
 
   ngOnInit(){
     this.httpService
-      .get()
+      .getCopyright()
       .subscribe((data) => {this.copyright = data.value})
 
     this.httpService
       .getUsers()
       .subscribe((data) => {this.users = data.userList})
+
+
   }
 
   title = 'mc-frontend';

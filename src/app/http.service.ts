@@ -3,14 +3,13 @@ import { HttpClient } from '@angular/common/http'
 import { User } from "./user.interface";
 import {Value} from "./contacts.interface";
 
-
 @Injectable()
 export class HttpService {
   apiUri = 'http://localhost:8080/info';
 
   constructor(private http: HttpClient) {}
 
-  get(){
+  getCopyright(){
     return this.http.get<Value>(`${this.apiUri}/copyright`)
   }
 

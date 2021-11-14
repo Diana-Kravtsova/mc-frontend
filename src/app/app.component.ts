@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from './http.service'
 import {UserName} from './user.interface';
-/*
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-*/
 
 /*import {ThemePalette} from '@angular/material/core';*/
 
@@ -38,4 +35,3 @@ export class AppComponent implements OnInit{
     this.background = this.background ? 'primary' : undefined;
   }*/
 }
-

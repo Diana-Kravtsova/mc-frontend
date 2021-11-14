@@ -11,46 +11,12 @@
   flex: 1 0 auto;
 }
 
-/*
 .bottom{
   position:fixed;
   bottom:0;
 }
 .copyright {
   flex: 0 0 auto;
-  font-size: 2.5vh;
-!*  z-index: 1;*!
-}
-.container {
-
-  overflow-y: auto;
-   flex: 1 0 auto;
- }
-.mat-tab-group {
-  font-size: 16px;
-}
-.hide, .mat-toolbar, .nav{
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.hide {
-  p{
-
-    max-height: 85.2vh;
-    max-height: 88.6vh;
-  }
-}
-*/
-
-.bottom{
-  position:fixed;
-  bottom:0;
-}
-.copyright {
-  flex: 0 0 auto;
-  //font-size: 2.5vh;/*
-  //z-index: 1;*/
 }
 .mat-tab-group {
   font-size: 16px;

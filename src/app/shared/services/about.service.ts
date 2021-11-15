@@ -1,15 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { About } from "../interfaces/about.interface";
+import { environment } from "../../../environments/environment";
+import { InfoInterface } from "../interfaces/info.interface";
 
 @Injectable({
     providedIn: 'root'
 })
+
 export class AboutService {
-    private apiUri = 'http://localhost:8080/info';
+    private apiUri = `${environment.apiUri}/info`;
+
     constructor(private http: HttpClient) {}
 
     getAbout(){
-        return this.http.get<About>(`${this.apiUri}/about`)
+        return this.http.get<InfoInterface>(`${this.apiUri}/about`)
     }
 }

@@ -11,7 +11,6 @@ import { MatTabsModule } from "@angular/material/tabs";
 
 import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
-import { CdkScrollableModule } from "@angular/cdk/scrolling";
 import { MatCardModule } from "@angular/material/card";
 
 
@@ -29,7 +28,6 @@ import { MatCardModule } from "@angular/material/card";
         MatToolbarModule,
         MatButtonModule,
         MatTabsModule,
-        CdkScrollableModule,
         MatCardModule,
     ],
     providers: [],

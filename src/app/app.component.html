@@ -1,36 +1,25 @@
 <mat-toolbar id="head" class="title" color="primary">
-  <span>Математическая коллекция</span>
-  <!--<div>
-    <button mat-flat-button
-            class="theme-button"
-            (click)="toggleBackground()">
-        Темная тема
-    </button>
-    <button mat-flat-button>Вход</button>
-    <button mat-flat-button>Регистрация</button>
-  </div>-->
+    <span>Математическая коллекция</span>
 </mat-toolbar>
-<div id="content" class="container">
-
-    <nav mat-tab-nav-bar color="primary" mat-align-tabs="center">
-
-      <a mat-tab-link
-         routerLink="">Разделы</a>
-      <section>
-        <a mat-tab-link
-           routerLinkActive
-           #rlaAbout="routerLinkActive"
-           [active]="rlaAbout.isActive"
-           routerLink="/about">О проекте</a>
-      </section>
+<div class="container">
+    <nav mat-tab-nav-bar mat-align-tabs="center" backgroundColor="primary">
+        <a mat-tab-link>
+            Разделы
+        </a>
+        <section>
+            <a mat-tab-link
+               routerLinkActive
+               #rlaAbout="routerLinkActive"
+               [active]="rlaAbout.isActive"
+               routerLink="/about">О проекте</a>
+        </section>
     </nav>
+    <div class="content">
+        <router-outlet class="main-about"></router-outlet>
 
-  <div>
-
-  </div>
-  <router-outlet></router-outlet>
+    </div>
 </div>
 
-<mat-toolbar class="copyright bottom" color="primary">
-  <span>{{ copyright }}</span>
+<mat-toolbar class="copyright" color="primary">
+    <span>{{ copyright }}</span>
 </mat-toolbar>

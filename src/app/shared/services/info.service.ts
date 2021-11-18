@@ -13,7 +13,7 @@ export class InfoService {
 
     constructor(private http: HttpClient) {}
 
-    getCopyright(){
-        return this.http.get<InfoInterface>(`${this.apiUri}/copyright`)
+    getInfo(id: string){
+        return this.http.get<InfoInterface>(`${this.apiUri}/${id}`)
     }
 }

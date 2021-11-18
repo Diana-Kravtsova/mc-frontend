@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AboutService } from '../../shared/services/about.service';
+import { InfoService } from "../../shared/services/info.service";
 
 @Component({
     selector: 'app-about',
@@ -10,11 +10,11 @@ import { AboutService } from '../../shared/services/about.service';
 export class AboutComponent implements OnInit {
     about?: string;
 
-    constructor(private aboutService: AboutService) {}
+    constructor(private infoService: InfoService) {}
 
     ngOnInit() {
-        this.aboutService
-            .getAbout()
+        this.infoService
+            .getInfo('about')
             .subscribe((data) => {this.about = data.value})
     }
 }

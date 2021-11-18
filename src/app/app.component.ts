@@ -13,7 +13,7 @@ export class AppComponent implements OnInit{
 
     ngOnInit(){
         this.infoService
-            .getCopyright()
+            .getInfo('copyright')
             .subscribe((data) => {this.copyright = data.value})
     }
 

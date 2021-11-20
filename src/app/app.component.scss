@@ -9,18 +9,19 @@
 
 .container{
     overflow:hidden;
-
-    flex: 1 0 0;
+    height: 100%;
     .content{
+        display: flex;
+        flex-direction: column;
         height: calc(100% - 48px);
         overflow: auto;
 
         .main-about{
-
+            flex: 1 0 auto;
+        }
+        .copyright {
+            display: flex;
+            flex: 0 0 auto;
         }
     }
-}
-
-.copyright {
-    flex: 0 0 auto;
 }

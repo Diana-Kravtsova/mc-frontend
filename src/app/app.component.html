@@ -13,13 +13,20 @@
                [active]="rlaAbout.isActive"
                routerLink="/about">О проекте</a>
         </section>
+        <section>
+            <a mat-tab-link
+               routerLinkActive
+               #rlaContacts="routerLinkActive"
+               [active]="rlaContacts.isActive"
+               routerLink="/contacts">Контакты</a>
+        </section>
     </nav>
     <div class="content">
-        <router-outlet class="main-about"></router-outlet>
-
+        <div class="main-about">
+            <router-outlet></router-outlet>
+        </div>
+        <mat-toolbar class="copyright" color="primary">
+            <span>{{ copyright }}</span>
+        </mat-toolbar>
     </div>
 </div>
-
-<mat-toolbar class="copyright" color="primary">
-    <span>{{ copyright }}</span>
-</mat-toolbar>

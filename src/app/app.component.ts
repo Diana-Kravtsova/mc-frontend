@@ -16,6 +16,4 @@ export class AppComponent implements OnInit{
             .getInfo('copyright')
             .subscribe((data) => {this.copyright = data.value})
     }
-
-    title = 'mc-frontend';
 }

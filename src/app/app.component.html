@@ -3,20 +3,16 @@
 </mat-toolbar>
 <div class="container">
     <nav mat-tab-nav-bar mat-align-tabs="center" backgroundColor="primary">
-        <section>
-            <a mat-tab-link
-               routerLinkActive
-               #rlaAbout="routerLinkActive"
-               [active]="rlaAbout.isActive"
-               routerLink="/about">О проекте</a>
-        </section>
-        <section>
-            <a mat-tab-link
-               routerLinkActive
-               #rlaContacts="routerLinkActive"
-               [active]="rlaContacts.isActive"
-               routerLink="/contacts">Контакты</a>
-        </section>
+        <a mat-tab-link
+           routerLinkActive
+           #rlaAbout="routerLinkActive"
+           [active]="rlaAbout.isActive"
+           routerLink="/about">О проекте</a>
+        <a mat-tab-link
+           routerLinkActive
+           #rlaContacts="routerLinkActive"
+           [active]="rlaContacts.isActive"
+           routerLink="/contacts">Контакты</a>
     </nav>
     <div class="content">
         <div class="main">

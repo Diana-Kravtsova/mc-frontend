@@ -1,11 +1,8 @@
-<mat-toolbar id="head" class="title" color="primary">
+<mat-toolbar class="title" color="primary">
     <span>Математическая коллекция</span>
 </mat-toolbar>
 <div class="container">
     <nav mat-tab-nav-bar mat-align-tabs="center" backgroundColor="primary">
-        <a mat-tab-link>
-            Разделы
-        </a>
         <section>
             <a mat-tab-link
                routerLinkActive
@@ -22,7 +19,7 @@
         </section>
     </nav>
     <div class="content">
-        <div class="main-about">
+        <div class="main">
             <router-outlet></router-outlet>
         </div>
         <mat-toolbar class="copyright" color="primary">

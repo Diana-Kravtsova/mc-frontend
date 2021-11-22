@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/info/\\w+"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "info/{{request.pathSegments.[1]}}.json",
+    "headers": {
+      "Content-Type": "application/json;charset=utf-8",
+      "Access-Control-Allow-Origin" : "*"
+    }
+  }
+}

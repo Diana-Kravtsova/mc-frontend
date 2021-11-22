@@ -1,0 +1,28 @@
+.title {
+    flex: 0 0 auto;
+    justify-content: center;
+
+    span {
+        flex-grow: 1;
+    }
+}
+
+.container{
+    overflow:hidden;
+    height: 100%;
+    .content{
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 48px);
+        overflow: auto;
+
+        .main{
+            flex: 1 0 auto;
+        }
+
+        .copyright {
+            display: flex;
+            flex: 0 0 auto;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.main-sections{
+    padding: 50px;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: flex-start;
+
+    mat-card{
+        margin: 15px;
+        align-items: flex-start;
+
+        mat-list{
+            padding-left: 20px;
+
+            mat-list-item{
+                padding-left: 10px;
+            }
+        }
+    }
+}

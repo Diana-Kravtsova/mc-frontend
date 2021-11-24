@@ -13,13 +13,16 @@ import { MatTabsModule } from "@angular/material/tabs";
 import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from "@angular/material/card";
+import { SectionsComponent } from "./pages/sections/sections.component";
+import {MatListModule} from "@angular/material/list";
 
 
 @NgModule({
     declarations: [
         AppComponent,
         AboutComponent,
-        ContactsComponent
+        ContactsComponent,
+        SectionsComponent
     ],
     imports: [
         BrowserModule,
@@ -31,6 +34,7 @@ import { MatCardModule } from "@angular/material/card";
         MatButtonModule,
         MatTabsModule,
         MatCardModule,
+        MatListModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

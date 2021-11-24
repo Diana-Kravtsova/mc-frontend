@@ -14,7 +14,7 @@ export class SectionsComponent implements OnInit {
     constructor(private sectionService: SectionsService) {}
 
     ngOnInit() {
-       this.getSection();
+        this.getSection();
     }
 
     getSection(): void {

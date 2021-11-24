@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from "@angular/material/card";
 import { SectionsComponent } from "./pages/sections/sections.component";
-import {MatListModule} from "@angular/material/list";
+import { MatListModule } from "@angular/material/list";
 
 
 @NgModule({

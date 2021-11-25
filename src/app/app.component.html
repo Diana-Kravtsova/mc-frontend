@@ -5,6 +5,11 @@
     <nav mat-tab-nav-bar mat-align-tabs="center" backgroundColor="primary">
         <a mat-tab-link
            routerLinkActive
+           #rlaContacts="routerLinkActive"
+           [active]="rlaContacts.isActive"
+           routerLink="/sections">Разделы</a>
+        <a mat-tab-link
+           routerLinkActive
            #rlaAbout="routerLinkActive"
            [active]="rlaAbout.isActive"
            routerLink="/about">О проекте</a>

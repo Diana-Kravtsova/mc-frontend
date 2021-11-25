@@ -1,20 +1,20 @@
 export interface SectionsInterface {
-    sections: Array<section>;
+    sections: Array<Section>;
 }
 
-export interface section{
+export interface Section{
     id: number;
     name: string;
-    directions: Array<direction>;
+    directions: Array<Direction>;
 }
 
-export interface direction{
+export interface Direction {
     id: number;
     name: string;
-    topics: Array<topic>;
+    topics: Array<Topic>;
 }
 
-export interface topic{
+export interface Topic {
     id: number;
     name: string;
 }

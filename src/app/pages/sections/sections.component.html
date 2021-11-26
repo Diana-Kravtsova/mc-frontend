@@ -8,9 +8,11 @@
             <mat-card-content>
                 <mat-list *ngFor="let direction of section.directions">
                     {{direction.name}}
+                    <mat-divider inset='true'></mat-divider>
 
                     <mat-list-item *ngFor="let topic of direction.topics">
                         {{topic.name}}
+                        <mat-divider inset='true'></mat-divider>
                     </mat-list-item>
                 </mat-list>
             </mat-card-content>

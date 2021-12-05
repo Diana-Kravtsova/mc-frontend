@@ -1,5 +1,10 @@
-<div class="main-sections">
-    <mat-card *ngFor="let section of sectionsInterface?.sections">
+<div class="main-sections"
+     (click)="closeSections()">
+    <mat-card *ngFor="let section of sectionsInterface?.sections"
+              [class.current]="isCurrentSection(section)"
+              [class.transparent]="!isCurrentSection(section) && isCurrentSectionNotEmpty()"
+              routerLink="/sections/{{section.id}}">
+
         <div class="content">
             <mat-card-title>
                 {{section.name}}
@@ -7,10 +12,15 @@
 
             <mat-card-content>
                 <mat-list *ngFor="let direction of section.directions">
-                    {{direction.name}}
+
+                    <div (click)="chooseDirection(section, direction)">
+                        {{direction.name}}
+                    </div>
                     <mat-divider inset='true'></mat-divider>
 
-                    <mat-list-item *ngFor="let topic of direction.topics">
+                    <mat-list-item *ngFor="let topic of direction.topics"
+                                   (click)="chooseTopic(section, direction, topic)">
+
                         {{topic.name}}
                         <mat-divider inset='true'></mat-divider>
                     </mat-list-item>

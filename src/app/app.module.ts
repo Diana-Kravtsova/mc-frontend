@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from "@angular/material/card";
 import { SectionsComponent } from "./pages/sections/sections.component";
 import { MatListModule } from "@angular/material/list";
+import { DirectionComponent } from './pages/direction/direction.component';
+import { TopicComponent } from './pages/topic/topic.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { MatListModule } from "@angular/material/list";
         AppComponent,
         AboutComponent,
         ContactsComponent,
-        SectionsComponent
+        SectionsComponent,
+        DirectionComponent,
+        TopicComponent
     ],
     imports: [
         BrowserModule,

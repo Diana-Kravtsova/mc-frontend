@@ -18,10 +18,11 @@
                     </div>
                     <mat-divider inset='true'></mat-divider>
 
-                    <mat-list-item *ngFor="let topic of direction.topics"
-                                   (click)="chooseTopic(section, direction, topic)">
+                    <mat-list-item *ngFor="let topic of direction.topics">
 
-                        {{topic.name}}
+                        <div class="mat-text" (click)="chooseTopic(section, direction, topic)">
+                            {{topic.name}}
+                        </div>
                         <mat-divider inset='true'></mat-divider>
                     </mat-list-item>
                 </mat-list>

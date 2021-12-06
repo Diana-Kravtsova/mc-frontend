@@ -16,7 +16,6 @@
 
             mat-list {
                 margin-left: 20px;
-                padding-bottom: 10px;
                 font-size: 16px;
 
                 mat-divider {
@@ -26,6 +25,7 @@
 
                 mat-list-item {
                     margin-left: 9px;
+                    height: 100%;
 
                     mat-divider {
                         margin-left: 7px;
@@ -42,38 +42,35 @@
         &:hover:not(.transparent) {
             @include mat.elevation(10);
             cursor: pointer;
-            transform: scale(1.1);
+            transform: scale(1.1, 1);
             transition: all 0.3s ease;
         }
 
         &.current {
             @include mat.elevation(8);
-
             mat-card-content {
-
                 margin: 30px;
-                mat-list {
 
+                mat-list {
                     mat-divider {
                         padding-right: 46px;
                     }
 
                     mat-list-item{
-
                         mat-divider {
                             padding-right: 37px;
                             margin-left: 0;
                             right: 0;
                         }
                     }
-
                 }
-
             }
         }
     }
 }
-
+.mat-text{
+    margin: 15px 0;
+}
 .transparent {
     opacity: 0.5;
 }
